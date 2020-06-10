@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="id : "
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="id"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="nama :"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="id"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textShowId"
+        android:layout_width="match_parent"
+        android:text="kjsdlkad"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textShowName"
+        android:layout_width="match_parent"
+        android:text="kjsdlkad"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+    </LinearLayout>
+</LinearLayout>
