@@ -10,38 +10,74 @@
 9        android:targetSdkVersion="29" />
 9-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:5:5-19:19
-12        android:allowBackup="true"
-12-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.2.0] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\0b96859a3cdf2530aa3d77dcfaeaf2fb\core-1.2.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.corona.sharedpreference.MainActivity" >
-21-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:14:17-69
-23-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:16:17-77
-25-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:5:22-77
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:16.0.4] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\9efbe096aff9c256197870c794b28439\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
+13-->[com.google.firebase:firebase-database:16.0.4] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\9efbe096aff9c256197870c794b28439\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
+14
+15    <application
+15-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:6:5-20:19
+16        android:allowBackup="true"
+16-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:7:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.2.0] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\764e2c6f805663a30c8cfc52ae4d6d9a\core-1.2.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:8:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:9:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:10:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:11:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:12:9-40
+25        <activity android:name="com.corona.sharedpreference.MainActivity" >
+25-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:13:9-19:20
+25-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:13:19-47
+26            <intent-filter>
+26-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:14:13-18:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:15:17-69
+27-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:15:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:17:17-77
+29-->C:\Users\SMKI\AndroidStudioProjects\sharedPreference\app\src\main\AndroidManifest.xml:17:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity
+32-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\654495d38653a592d6b4eada19e76086\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+33            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+33-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\654495d38653a592d6b4eada19e76086\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+34            android:exported="false"
+34-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\654495d38653a592d6b4eada19e76086\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+35            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+35-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\654495d38653a592d6b4eada19e76086\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+36
+37        <provider
+37-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\2455e54da0d8b7f140e14571f92b52f3\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+38            android:name="com.google.firebase.provider.FirebaseInitProvider"
+38-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\2455e54da0d8b7f140e14571f92b52f3\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+39            android:authorities="com.corona.sharedpreference.firebaseinitprovider"
+39-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\2455e54da0d8b7f140e14571f92b52f3\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+40            android:exported="false"
+40-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\2455e54da0d8b7f140e14571f92b52f3\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+41            android:initOrder="100" />
+41-->[com.google.firebase:firebase-common:16.0.3] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\2455e54da0d8b7f140e14571f92b52f3\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+42
+43        <meta-data
+43-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\b4a78d575d8a837b94af9ddf0ff75cf3\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+44            android:name="com.google.android.gms.version"
+44-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\b4a78d575d8a837b94af9ddf0ff75cf3\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+45            android:value="@integer/google_play_services_version" />
+45-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\SMKI\.gradle\caches\transforms-2\files-2.1\b4a78d575d8a837b94af9ddf0ff75cf3\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+46    </application>
+47
+48</manifest>
